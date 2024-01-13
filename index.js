@@ -14,7 +14,7 @@ const User = require("./model/user")
 
 app.use(express.urlencoded({extended: true}))
 
-mongoose.connect("mongodb+srv://SaifySheikh:Sharif4565@cluster0.xbgnrhv.mongodb.net/EMS").then(()=>{
+mongoose.connect("your cluster url").then(()=>{
     console.log("Database Connected")
 }).catch((e)=>{
     console.log(e)
